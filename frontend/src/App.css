@@ -1,0 +1,36 @@
+/* App-specific styles - most styles are in index.css */
+
+/* ReactFlow specific overrides */
+.react-flow {
+  width: 100%;
+  height: 100%;
+}
+
+/* Disable drag and selection on ReactFlow */
+.react-flow__node {
+  pointer-events: auto;
+  cursor: default !important;
+}
+
+.react-flow__node.dragging {
+  cursor: default !important;
+}
+
+/* Ensure textarea is interactive */
+.textarea {
+  pointer-events: auto;
+  cursor: text !important;
+}
+
+/* Additional responsive tweaks if needed */
+@media (max-width: 768px) {
+  .react-flow .react-flow__node {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .react-flow .react-flow__node {
+    font-size: 12px;
+  }
+}
