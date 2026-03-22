@@ -132,7 +132,7 @@ function App() {
 
       // Call backend
       const response = await axios.post(
-        'http://localhost:5000/api/ask-ai',
+        'https://futureblink-bx49.onrender.com/api/ask-ai',
         { prompt }
       );
 
@@ -185,7 +185,7 @@ function App() {
       }
 
       // Call backend
-      await axios.post('http://localhost:5000/api/save-prompt', {
+      await axios.post('https://futureblink-bx49.onrender.com/api/save-prompt', {
         prompt,
         response,
       });
