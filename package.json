@@ -1,0 +1,22 @@
+{
+  "name": "futureblink",
+  "version": "1.0.0",
+  "description": "AI Flow Application with React Frontend and Node.js Backend",
+  "main": "backend/index.js",
+  "scripts": {
+    "start": "cd backend && npm start",
+    "build": "cd backend && npm install"
+  },
+  "keywords": [
+    "ai",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "Zabin",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

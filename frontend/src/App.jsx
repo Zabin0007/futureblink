@@ -172,6 +172,7 @@ function App() {
   // Save - Call backend save API
   const handleSave = async () => {
     try {
+      setLoading(true)
       const inputNode = nodes.find((n) => n.id === 'input');
       const resultNode = nodes.find((n) => n.id === 'result');
 
@@ -190,6 +191,7 @@ function App() {
       });
 
       alert('✅ Saved successfully!');
+      setLoading(false)
     } catch (err) {
       alert('Error: ' + (err.response?.data?.error || 'Failed to save'));
     }
