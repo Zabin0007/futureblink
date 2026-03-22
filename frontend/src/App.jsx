@@ -132,7 +132,7 @@ function App() {
 
       // Call backend
       const response = await axios.post(
-        'https://futureblink-bx49.onrender.com/api/ask-ai',
+        `${import.meta.env.VITE_API_URL}/api/ask-ai`,
         { prompt }
       );
 
@@ -185,7 +185,7 @@ function App() {
       }
 
       // Call backend
-      await axios.post('https://futureblink-bx49.onrender.com/api/save-prompt', {
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/save`, {
         prompt,
         response,
       });

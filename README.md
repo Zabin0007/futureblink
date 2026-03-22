@@ -2,7 +2,7 @@
 
 A full-stack web application that integrates React Flow visualization with OpenRouter AI API. Users can input prompts, get AI responses, and save them to MongoDB.
 
-**Live Demo**: [https://your-app.vercel.app](https://your-app.vercel.app)
+**Live Demo**: https://futureblink-mauve.vercel.app/
 
 ---
 
@@ -56,14 +56,14 @@ Before you begin, ensure you have:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/mern-ai-flow.git
-cd mern-ai-flow
+git clone https://github.com/zabin0007/FutureBlink.git
+cd FutureBlink
 ```
 
 ### 2. Setup Backend
 
 ```bash
-cd server
+cd backend
 
 # Install dependencies
 npm install
@@ -94,7 +94,7 @@ You should see:
 In a new terminal:
 
 ```bash
-cd client
+cd frontend
 
 # Install dependencies
 npm install
@@ -240,9 +240,9 @@ mern-ai-flow/
 3. Create New Web Service
 4. Select this repository
 5. Configure:
-   - Root Directory: `server`
-   - Build Command: `npm install`
-   - Start Command: `npm start`
+   - Root Directory: ``
+   - Build Command: `cd backend && npm install `
+   - Start Command: `cd backend && npm start`
 6. Add Environment Variables:
    - `PORT=5000`
    - `MONGODB_URI=your-mongodb-uri`
